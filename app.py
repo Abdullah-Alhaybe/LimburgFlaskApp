@@ -27,7 +27,7 @@ users.append(User(id=1,username='admin',password='admin'))
 
 
 
-@app.route('/',methods = ['POST','GET'])
+@app.route('/login',methods = ['POST','GET'])
 def login():
     '''Returns a static HTML page'''
     if request.method=='POST':
